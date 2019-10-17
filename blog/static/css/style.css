@@ -1,0 +1,81 @@
+
+body{
+    font-family: 'Microsoft YaHei','SimHei',Arial,Sans-Serif;
+}
+
+a:hover{text-decoration:none }
+
+.jumbotron{
+    background-image: url(/static/wm.jpg);
+}
+
+
+
+.info{
+    background-color: #f7f7fa;
+    padding:30px 0;
+    margin:30px 0 0 0;
+
+}
+
+.bigcard{
+    background-color: #ffffff;
+    margin:0 0 10px 0;
+    padding: 20px 30px;
+}
+
+.carddown{
+    padding: 20px 30px;
+}
+
+
+.cards{
+    background-color: #ffffff;
+    margin:10px 0 10px 0;
+}
+
+.cards img{
+    margin:0 0 0 -15px;
+}
+
+.detail{
+    background-color: #ffffff;
+    margin:10px 20px 10px 20px;
+    padding:20px 20px;
+    font-size:18px;
+}
+
+.ArticleTitle{
+    font-family: 'Microsoft YaHei','SimHei',Arial,Sans-Serif;
+    color:#0f0f0f;
+    font-weight: bold;
+}
+
+.ArticleTitle:hover{
+    color:#1e80b3;
+}
+
+.abstract{
+    font-family: 'Microsoft YaHei','SimHei',Arial,Sans-Serif;
+    color:#7c8174;
+}
+.time{
+    font-size: 12px;
+    color:#7c8174;
+}
+.eye-open{
+    font-size: 12px;
+    color:#7c8174;
+    text-align:right;
+}
+
+
+#footer{
+    background-color: #3e4040;
+    text-align: center;
+    border-top:1px solid #9d9d9d;
+    color: #ffffff;
+    font-size:12px;
+
+}
+

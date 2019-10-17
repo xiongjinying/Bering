@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="wb:webmaster" content="33e61cc839be043a"/>
+    <meta name="Keywords" content="python django搭建博客,imagekit,django,ckeditor">
+    <meta name="Description" content="Python从入门到放弃">
+    <link rel="shortcut icon" href="{%static '/favicon.ico' %}" />
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=61825835" charset="UTF-8"></script>
+    <title>Python之谷</title>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-left" href="{% url 'index' %}"><img src="{% static 'logo5.png' %}"></a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="example-navbar-collapse">
+        <ul class="nav navbar-nav navbar-left">
+            <li class="active"><a href="{% url 'index' %}">首页</a></li>
+            <li ><a href="{% url 'about' %}">关于我</a></li>
+
+        </ul>
+    </div>
+    </div>
+</nav>
+
+
+
+<div class="info">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-1 cards">
+                分享到
+                    <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_tieba" data-cmd="tieba" title="分享到百度贴吧"></a></div>
+                                <script>                  window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "1", "bdSize": "32" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=0.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+                         </div>
+
+                <div class="col-md-8">
+
+                    <div class="detail">
+
+                                        <h2>{{article.title}}</h2><br>
+                                         <span class = "glyphicon glyphicon-time"></span>
+                                         <span class="time">{{article.add_date|date:"Y-m-d H:i"}}</span>
+                                        <span class = "glyphicon glyphicon-stats"></span>
+                                         <span class="eye-open">    {{article.views}} </span>
+                                        <hr/>
+                                        {{article.content|safe}}
+
+                                        <hr/>
+                                        <br>
+
+                                        
+                      </div>
+                  </div>
+
+
+                <div class="col-md-3 " >
+                    <div class="container-fluid cards carddown"
+ 
+                    <h5>关注我的微博:</h5 >
+                    <a class="navbar-left" href="http://weibo.com/u/2029854902?refer_flag=1001030102_&is_all=1"><img src="{% static 'weibo.png' %}"></a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+</div>
+
+
+<footer class="footer navbar-fixed-bottom" id="footer">
+    <div class="container">
+        <p>Copyright &copy 2019 Python之谷 </p>
+    </div>
+</footer>
+
+<script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+</html>
