@@ -1,4 +1,4 @@
-certifi==2019.9.11
+certifi==2022.12.7
 Django==2.2.6
 django-appconf==1.0.3
 django-ckeditor==5.7.1
